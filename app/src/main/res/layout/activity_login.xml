@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimaryDark"
+
+    >
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14pt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Login E-RT"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtlogin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_login"
+        android:paddingRight="100dp"
+        >
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+
+            android:layout_marginTop="80dp"
+            />
+        <EditText
+            android:id="@+id/login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+
+            android:layout_below="@+id/login_username"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/btlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_pass"
+            android:background="@drawable/bt_selector_layout_login"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+
+            />
+        <Button
+            android:id="@+id/bt_log_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btlogin"
+            android:background="@drawable/bt_selector_layout_login"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

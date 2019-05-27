@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+
+     android:orientation="vertical"
+
+     android:layout_marginBottom="50dp"
+     >
+<EditText
+    android:id="@+id/judulberita"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Tulis Judul disini"
+    />
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:background="@drawable/grey_border_bottom"
+
+         android:layout_weight="0.7">
+         <EditText
+             android:id="@+id/isiberita"
+             android:layout_width="match_parent"
+             android:textAlignment="textStart"
+             android:layout_height="match_parent"
+             android:hint="Tulis Berita disini"
+
+
+             android:gravity="start" />
+
+     </android.support.design.widget.TextInputLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:background="@drawable/grey_border_bottom"
+
+
+         android:layout_weight="0.2">
+
+     <EditText
+         android:id="@+id/sumberberita"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:hint="Tulis Sumber Berita"
+         android:gravity="start"
+         android:background="@color/tranparant"/>
+     </android.support.design.widget.TextInputLayout>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:text="Upload Berita"
+         android:id="@+id/uploadberita"
+         android:textAllCaps="false"
+         android:layout_weight="0.1"/>
+
+
+
+
+
+ </LinearLayout>
+
+
+
+</RelativeLayout>
